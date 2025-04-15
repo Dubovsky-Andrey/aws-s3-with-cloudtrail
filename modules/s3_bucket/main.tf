@@ -1,6 +1,6 @@
 # Create an S3 bucket
 resource "aws_s3_bucket" "cloudtrail_bucket" {
-  bucket = var.cloudtrail_bucket
+  bucket        = var.cloudtrail_bucket
   force_destroy = true
   tags = {
     Project     = var.project_name
@@ -40,7 +40,7 @@ resource "aws_s3_bucket_lifecycle_configuration" "cloudtrail_bucket" {
   rule {
     id     = "log-retention"
     status = "Enabled"
-    
+
     filter {
       prefix = ""
     }
