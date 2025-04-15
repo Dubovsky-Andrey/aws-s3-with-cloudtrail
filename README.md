@@ -26,11 +26,6 @@ A Terraform project that provisions an AWS S3 bucket with CloudTrail integration
 1. **Clone the Repository**  
    Clone this repository to your local machine.
 
-   ```bash
-   git clone <repository-url>
-   cd aws-s3-with-cloudtrail
-   ```
-
 2. **Configure Variables**  
    Update the `terraform.tfvars` file with your desired values. Below are the required variables:
 
@@ -54,34 +49,34 @@ A Terraform project that provisions an AWS S3 bucket with CloudTrail integration
 3. **Initialize Terraform**  
    Run the following command to initialize the Terraform project:
 
-   ```bash
+   ```
    terraform init
    ```
 
 4. **Plan the Infrastructure**  
    Generate and review the execution plan:
 
-   ```bash
+   ```
    terraform plan
    ```
 
    Optionally, save the plan to a file:
 
-   ```bash
+   ```
    terraform plan -out=plan.txt
    ```
 
 5. **Apply the Configuration**  
    Apply the Terraform configuration to create the resources:
 
-   ```bash
+   ```
    terraform apply
    ```
 
 6. **Destroy the Resources**  
    To clean up and remove all resources, run:
 
-   ```bash
+   ```
    terraform destroy
    ```
 
